@@ -1,5 +1,5 @@
 .cover{
-  background: url("media/cover.jpeg");
+  background: url("media/cover.jpg");
   text-align: center;
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   height: 100vh;
@@ -114,8 +114,33 @@ section:nth-of-type(odd) {
 }
 
 
+.fade_in{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.fade_in.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
+.fade_1{
+  transition: 1s all ease;
+}
+
+.fade_2{
+  transition: 1.25s all ease;
+}
+
+.fade_3{
+  transition: 1.5s all ease;
+}
+
+.fade_4{
+  transition: 1.75s all ease;
+}
 
 .site-header .navbar-nav .nav-link {
   color: #393c45;
