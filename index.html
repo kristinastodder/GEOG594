@@ -14,24 +14,24 @@
 <body>
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggle">
-              <div class="navbar-nav mr-auto">
-                  <a class="nav-item nav-link" href="#about">About</a>
-                  <a class="nav-item nav-link" href="#data">Data</a>
-                  <a class="nav-item nav-link" href="#analysis">Analysis</a>
-                  <a class="nav-item nav-link" href="#forecasting">Forecasting</a>
-                  <a class="nav-item nav-link" href="#team">Team</a>
-              </div>
-            </div>
-          </div>  
-      </nav>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link active" href="#about">About</a>
+            <a class="nav-item nav-link" href="#data">Data</a>
+            <a class="nav-item nav-link" href="#analysis">Analysis</a>
+            <a class="nav-item nav-link" href="#forecasting">Forecasting</a>
+            <a class="nav-item nav-link" href="#team">Team</a>
+          </div>
+        </div>
+      </div>  
+    </nav>
   </header>
 
-<secton id="about">
+<section id="about">
   <div class="cover">
     <h1 class="font_60 font-weight-bold text-white">What's Your Water Quality?</h1>
   </div>
@@ -41,16 +41,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <img class="img-fluid" src="media/river.jpg" alt="image">
+        <img class="img-fluid" src="media/river.jpg" alt="image of river">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid" src="media/beach.jpg" alt="image">
+        <img class="img-fluid" src="media/beach.jpg" alt="image of beach">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid" src="media/waterfall.jpg" alt="image">
+        <img class="img-fluid" src="media/waterfall.jpg" alt="image of waterfall">
       </div>
       <div class="col-md-3">
-        <img class="img-fluid" src="media/recreation.jpg" alt="image">
+        <img class="img-fluid" src="media/recreation.jpg" alt="image of people on beach">
       </div>
     </div>
   </div>
@@ -60,11 +60,11 @@
       <div class="padding_left font_30 pt-1">However, these bodies of water are periodically closed due to unsafe levels of bacteria in the water</div>
     </div>    
     <div class="col-md-6">
-      <img class="img-fluid fade_in" src="media/sign.jpg" alt="image">
+      <img class="img-fluid fade_in" src="media/sign.jpg" alt="image of sign that says `keep out sewage contaminated water`">
     </div>
   </div>
   <div class="break-little"></div>
-    <h3 class="container my-auto p-5 text-center font_40">Our team analyzed recreational water quality throughout the state and created a forcasting model predicting how long poor water quality will last.</h3>
+    <h3 class="container my-auto p-5 text-center font_40">Our team analyzed recreational water quality throughout the state and created a forcasting model to predict water quality at different sites</h3>
   <div class="break-little"></div>
 </section>
 
@@ -76,11 +76,11 @@
   </div>
   <div class="break-little"></div>
   <div class="no-gutters row">
-    <div class="col-md-6 px-5">
-      <iframe width="700" height="400" src="https://data.ca.gov/dataset/surface-water-fecal-indicator-bacteria-results/resource/7639446f-8c62-43d9-a526-8bc7952dd8bd/view/75054277-83ad-4ddd-8c0a-b7b38112cfb2" frameBorder="0"></iframe>
+    <div class="col-md-6 d-flex justify-content-center">
+      <iframe width="700" height="400" src="https://data.ca.gov/dataset/surface-water-fecal-indicator-bacteria-results/resource/7639446f-8c62-43d9-a526-8bc7952dd8bd/view/75054277-83ad-4ddd-8c0a-b7b38112cfb2" frameBorder="0" alt="embeded SafeToSwim dataset"></iframe>
     </div>
     <div class="col-md-6 my-auto p-2 text-center">
-      <h3 class="padding_right pt-1 font_30">The dataset contains more than 300,000 entries collected from various collection sites throughout the state</h3>
+      <h3 class="padding_right pt-1 font_30">The dataset contains more than 1,000,000 entries collected from various collection sites throughout the state</h3>
     </div>  
   </div>
   <div class="break-little"></div>
@@ -89,52 +89,65 @@
       <div class="padding_left font_30 pt-1">To interpret this data, we designated a threshold at which stations are considered to have "Poor" or "Fair" water quality</div>
     </div>    
     <div class="col-md-6 d-flex justify-content-center">
-      <img class="img-fluid" src="media/designation.png" alt="image">
+      <img class="img-fluid" src="media/designation.png" alt="image that designates fair water quality as blue and poor water quality as red">
     </div>
   </div>
   <div class="break-little>"></div>
-  <div class="container font_30 mt-5 text-center fade_in">You can view the most recent water quality designation for each station below</div>
+  <div class="container font_40 mt-5 text-center fade_in">View the most recent water quality designation for each station below</div>
   <div class="break-little"></div>
-  <div class="container text-center">
-    <div class='tableauPlaceholder' id='viz1701711076208' style='position: relative'><noscript><a href='#'><img alt='Overview Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeSeries2_17013063796360&#47;OverviewDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TimeSeries2_17013063796360&#47;OverviewDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeSeries2_17013063796360&#47;OverviewDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701711076208');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-  </div>
-  <div class="break-little"></div>
+  <div class='tableauPlaceholder' id='viz1701724931241' style='position: relative'><noscript><a href='#'><img alt='Interactive map with recent water quality observations' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeSeries2_17017246990130&#47;OverviewDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TimeSeries2_17017246990130&#47;OverviewDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeSeries2_17017246990130&#47;OverviewDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701724931241');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 </section>
 
 <section id="analysis">
   <div class="break-little"></div>
   <h2 class="text-center font_60 my-auto p-2">Analysis</h2>
+  <div class="break-little"></div>
   <div class="no-gutters row">
-    <div class="col-md-8 px-5 my-auto text-center">
+    <div class="col-md-7 px-5 my-auto text-center">
       <h3 class="padding_right pt-1 font_30">Our analysis showed that the month of January contained the highest counts of poor water quality records throughout the state</h3>
     </div>
     <div class="col-md-4 p-3">
-      <img class="img-fluid" src="media/plot_poor.png" alt="image">
+      <img class="img-fluid" src="media/plot_poor.png" alt="plot of poor water quality by month">
     </div>    
   </div>
   <div class="break-little"></div>
-  <div class="font_30 my-auto p-3 fade_in text-center">However, the month of December contained the highest <i>percentage</i> of poor water quality records relative to other months</div>
+  <div class="bg-white p-5">
+    <div class="font_30 my-auto p-3 fade_in text-center">However, the month of December contained the highest <i>percentage</i> of poor water quality records relative to other months</div>
+    <div class="break-little"></div>
+    <div class="no-gutters row text-center">
+      <div class="col-md-7 px-5">
+        <div style="padding:75% 0 0 0;position:relative; width:100%;"><iframe src="https://player.vimeo.com/video/889735772?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Water Quality 2 (1)"></iframe></div><script src="https://player.vimeo.com/api/player.js" alt="animation of water quality records by month"></script>
+        <p>need to update with full dataset</p>
+        </div>
+        <div class="col-md-5 my-auto p-2 text-center">
+          <p>Water Quality by Month</p>
+          <img class="img-fluid" src="media/.png" alt="plot of fair vs poor water quality by month">
+        </div>    
+      </div>
+    </div>
+  </div>
+  <div class="break-little"></div>
+  <div class="font_30 my-auto p-3 text-center">These results are likely because California receives the majority of its annual rainfall during the winter months (December-February)</div>
   <div class="break-little"></div>
   <div class="no-gutters row">
-    <div class="col-md-7 px-5">
-      <div style="padding:75% 0 0 0;position:relative; width:100%;"><iframe src="https://player.vimeo.com/video/889735772?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Water Quality 2 (1)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>need to update this map/analysis with full dataset - kristina</div>
-      <div class="col-md-5 my-auto p-2 text-center">
-        <img class="img-fluid" src="media/plot_month.png" alt="image">
-        <p>Water Quality by Month</p>
-      </div>    
+    <div class="col-md-6 my-auto p-2 text-center">
+      <div class="padding_left font_30 pt-1 fade_in">During rain events, nutrients and other contaminants are transfered from land into bodies of water and feed the growth of bacteria.</div>
+    </div>    
+    <div class="col-md-6">
+      <img class="img-fluid" src="media/rainfall_river.jpg" alt="image of muddy river">
     </div>
   </div>
   <div class="break-little"></div>
   <div class="no-gutters row">
-    <div class="col-md-5 px-5">
-      <div class="col-md-7 my-auto p-2 text-center">
-        <h3 class="padding_right pt-1 font_30">When analyzed by location...</h3>
-      </div>    
+    <div class="col-md-6">
+      <img class="img-fluid" src="media/rainfall_beach.jpg" alt="image of muddy river entering ocean">
     </div>
+    <div class="col-md-6 my-auto p-2 text-center">
+      <h3 class="padding_right pt-1 font_30">The early rain events of the winter can be particularly polluting due to the accumulation of contaminants and nutients that have not washed away for months.</h3>
+    </div>  
   </div>
-  <p>Add more analysis here...possibly by location (north vs south or coast vs inland)?</p>
   <div class="break-little"></div>
-  <div class="font_30 my-auto p-3 fade_in text-center">Write conclusions here</div>
+    <div class="font_30 my-auto p-3 fade_in text-center">This may explain why December has the greatest proportion of Poor water quality events.</div>
   <div class="break-little"></div>
 </section>
 
@@ -142,28 +155,41 @@
   <div class="break-little"></div>
   <div class="text-center my-auto">
     <h2 class="font_60 my-auto p-3">The Forcasting Model</h2>
-    <div class="h9 my-auto p-3">Add forcasting info here</div>
-  </div>
+    <div class="font_30 my-auto p-3">We additionally created a forcasting model to predict future water quality at various beaches in Los Angeles County</div>
   <div class="break-little"></div>
+  <div class="no-gutters row">
+    <div class="col-md-6 px-5 my-auto text-center">
+      <h3 class="padding_right pt-1 font_30">Our model indicated that all selected stations would trend towards poor water quality over the next several months</h3>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="media/sign2.jpg" alt="image of sign on beach that says `no swimming`">
+    </div>    
+  </div>
+  <div class="break-little>"></div>
+    <div class="container font_40 mt-5 text-center fade_in">View the predicted water quality for each station below</div>
+  <div class="break-little"></div>
+
+<iframe src="https://sdsugeo.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=b3b7708654b24296a2430edc4e23ce69" alt="map with forcasting plots by site" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+
 </section>
 
 <section id="team">
   <div class="break-little"></div>
     <h2 class="font_60 my-auto text-center p-3">Team</h2>
     <div class="break-little"></div>
-    <div class="container">
+    <div class="container text-center">
       <div class="row">
         <div class="col-md-3">
-          <img class="img-fluid" src="media/team.png" alt="image">Sarthak Karr
+          <img class="img-fluid" src="media/team.png" alt="image of Sarthak">Sarthak Karr
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" src="media/team.png" alt="image">Julian Ornelas
+          <img class="img-fluid" src="media/team.png" alt="image of Julian">Julian Ornelas
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" src="media/team.png" alt="image">Max Ramirez
+          <img class="img-fluid" src="media/team.png" alt="image of Max">Max Ramirez
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" src="media/team.png" alt="image">Kristina Stodder
+          <img class="img-fluid" src="media/team.png" alt="image of Kristina">Kristina Stodder
         </div>
       </div>
     </div>
